@@ -8,4 +8,10 @@ export PS1='\[\033[0;33m\]\w/ \[\033[1;30m\]\t \[\033[1;32m\]$(__git_ps1 "[%s]")
 # \t: current time
 
 ## ENVIRONMENT VARIABLE
-export HOMEBREW_CASK_OPTS='--appdir=/Applications'
+if [ "$(uname)" == 'MSYS_NT-6.1' ]; then
+  echo "MSYS2 Configuration"
+elif [ "$(uname)" == 'Darwin' ]; then
+  echo "MacOS Configuration"
+  export HOMEBREW_CASK_OPTS='--appdir=/Applications'
+fi
+
