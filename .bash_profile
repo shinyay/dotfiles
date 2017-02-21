@@ -6,6 +6,8 @@ fi
 ## JDK
 if [ "$(uname)" == 'MSYS_NT-6.1' ]; then
   echo "MSYS2: .bash_profile"
+  export JAVA_HOME=/c/Java/jdk1.8.0_121
+  export PATH=${JAVA_HOME}/bin:$PATH
 elif [ "$(uname)" == 'MINGW64_NT-10.0' ]; then
   echo "MINGW64: .bash_profile"
   export JAVA_HOME=/c/Java/jdk1.8.0_121
