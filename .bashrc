@@ -20,3 +20,7 @@ fi
 if [ -f ${HOME}/.bash_custom ]; then
   source ${HOME}/.bash_custom
 fi
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/home/syanagih/.sdkman"
+[[ -s "/home/syanagih/.sdkman/bin/sdkman-init.sh" ]] && source "/home/syanagih/.sdkman/bin/sdkman-init.sh"
