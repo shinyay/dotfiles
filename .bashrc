@@ -9,3 +9,7 @@ export PS1='\[\033[0;33m\]\w/ \[\033[1;30m\]\t \[\033[1;32m\]$(__git_ps1 "[%s]")
 
 ## ENVIRONMENT VARIABLE
 export HOMEBREW_CASK_OPTS='--appdir=/Applications'
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/Users/shinyay/.sdkman"
+[[ -s "/Users/shinyay/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/shinyay/.sdkman/bin/sdkman-init.sh"
