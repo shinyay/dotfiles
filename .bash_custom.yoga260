@@ -1,0 +1,6 @@
+export PATH=/c/Users/syanagih/AppData/Local/atom/bin:$PATH
+export PATH=/c/Apps/Nodist/bin:$PATH
+export NODIST_PREFIX=/c/Apps/Nodist
+export NODE_PATH=/c/Apps/Nodist/node_modules
+export NODIST_X64=1
+
