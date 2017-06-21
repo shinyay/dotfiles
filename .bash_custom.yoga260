@@ -1,4 +1,5 @@
 export PATH=/c/Users/syanagih/AppData/Local/atom/bin:$PATH
+export PATH="/c/Program Files/Docker/Docker/Resources/bin":$PATH
 export PATH=/c/Ruby/Ruby24-x64/bin:$PATH
 export PATH=/c/Apps/Nodist/bin:$PATH
 export NODIST_PREFIX=/c/Apps/Nodist
