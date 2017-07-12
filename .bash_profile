@@ -7,6 +7,8 @@ fi
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
+## virtualenv
+eval "$(pyenv virtualenv-init -)"
 
 if [ "$(uname)" == 'MSYS_NT-6.1' ]; then
   echo "MSYS2: .bash_profile"
