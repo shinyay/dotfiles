@@ -7,4 +7,4 @@ export PATH=/c/Apps/Oracle/VirtualBox:$PATH
 export NODIST_PREFIX=/c/Apps/Nodist
 export NODE_PATH=/c/Apps/Nodist/node_modules
 export NODIST_X64=1
-
+export VAGRANT_HOME=/c/msys2/home/syanagih/.vagrant.d
