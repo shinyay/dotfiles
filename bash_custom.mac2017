@@ -1,2 +1,18 @@
+# For Macbook
+echo "MacOS: .bashrc"
+
+# Homebrew Cask
+export HOMEBREW_CASK_OPTS='--appdir=/Applications'
+
 # Git
 export PATH=/usr/local/git/bin:$PATH
+
+# jEnv
+if which jenv > /dev/null; then
+  export PATH="$HOME/.jenv/bin:$PATH"
+  eval "$(jenv init -)"
+fi
+
+# SDKMAN!
+export SDKMAN_DIR="/Users/shinyay/.sdkman"
+[[ -s "/Users/shinyay/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/shinyay/.sdkman/bin/sdkman-init.sh"

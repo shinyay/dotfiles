@@ -23,12 +23,6 @@ elif [ "$(uname)" == 'MINGW64_NT-10.0' ]; then
   #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
   export SDKMAN_DIR="/home/syanagih/.sdkman"
   [[ -s "/home/syanagih/.sdkman/bin/sdkman-init.sh" ]] && source "/home/syanagih/.sdkman/bin/sdkman-init.sh"
-elif [ "$(uname)" == 'Darwin' ]; then
-  echo "MacOS: .bashrc"
-  export HOMEBREW_CASK_OPTS='--appdir=/Applications'
-  #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-  export SDKMAN_DIR="/Users/shinyay/.sdkman"
-  [[ -s "/Users/shinyay/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/shinyay/.sdkman/bin/sdkman-init.sh"
 fi
 
 if [ -f ${HOME}/.bash_custom ]; then
