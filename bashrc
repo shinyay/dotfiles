@@ -1,6 +1,13 @@
 ## PROMPT
-source ${HOME}/.dotfiles/git-contrib/git-prompt.sh
-source ${HOME}/.dotfiles/git-contrib/git-completion.bash
+if [[ "$(uname)" == 'Darwin' ]; then
+  echo "MacOS: git completion settings"
+  source /usr/local/etc/bash_completion.d/git-prompt.sh
+  source /usr/local/etc/bash_completion.d/git-prompt.sh
+else
+  source ${HOME}/.dotfiles/git-contrib/git-prompt.sh
+  source ${HOME}/.dotfiles/git-contrib/git-completion.bash
+fi
+
 GIT_PS1_SHOWDIRTYSTATE=true
 export PS1='\[\033[0;33m\]\w/ \[\033[1;30m\]\t \[\033[1;32m\]$(__git_ps1 "[%s]")\[\033[0m\] $ '
 # \w: current directory with path
