@@ -1,5 +1,5 @@
 ## PROMPT
-if [[ "$(uname)" == 'Darwin' ]; then
+if [ "$(uname)" == 'Darwin' ]; then
   echo "MacOS: git completion settings"
   source /usr/local/etc/bash_completion.d/git-prompt.sh
   source /usr/local/etc/bash_completion.d/git-prompt.sh
