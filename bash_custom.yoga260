@@ -8,3 +8,4 @@ export NODIST_X64=1
 #export PATH=/c/Apps/Oracle/VirtualBox:$PATH
 #export PATH=/c/Apps/Vagrant/bin:$PATH
 #export VAGRANT_HOME=/c/msys2/home/syanagih/.vagrant.d
+export PATH="/c/Apps/Cloud Foundry/":$PATH
